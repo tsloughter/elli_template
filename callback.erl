@@ -1,4 +1,4 @@
--module({{name}}).
+-module({{name}}_callback).
 
 -export([handle/2, handle_event/3]).
 

@@ -5,7 +5,7 @@
   {mod, { {{name}}_app, []}},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
     elli
    ]},
   {env,[]},

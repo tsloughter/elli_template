@@ -31,7 +31,6 @@ init([]) ->
     Port = application:get_env({{name}}, port, 8080),
     ElliOpts = [{callback, {{name}}_callback}, {port, Port}],
     ElliSpec = { {{name}}_http, {elli, start_link, [ElliOpts]}, permanent, 5000, worker, [elli]},
-
     {ok, { {one_for_one, 5, 10}, [ElliSpec]} }.
 
 %%====================================================================
