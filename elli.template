@@ -1,0 +1,15 @@
+{description, "Elli powered application."}.
+{variables, [
+    {name, "mylib", "Name of the OTP application"},
+    {desc, "An Elli application", "Short description of the elli app"}
+]}.
+{template, "app.erl", "{{name}}/src/{{name}}_app.erl"}.
+{template, "sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
+{template, "callback.erl", "{{name}}/src/{{name}}_callback.erl"}.
+{template, "otp_app.app.src", "{{name}}/src/{{name}}.app.src"}.
+{template, "rebar.config", "{{name}}/rebar.config"}.
+{template, "gitignore", "{{name}}/.gitignore"}.
+{template, "LICENSE", "{{name}}/LICENSE"}.
+{template, "README.md", "{{name}}/README.md"}.
+{template, "sys.config", "{{name}}/config/sys.config"}.
+{template, "vm.args", "{{name}}/config/vm.args"}.
