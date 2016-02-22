@@ -17,3 +17,14 @@ Use
 $ rebar3 new elli name=proj_name
 $ cd proj_name
 ```
+
+See the callback module for a "hello world" example:
+
+```erlang
+handle('GET',[<<"hello">>, <<"world">>], _Req) ->
+    %% Reply with a normal response. 'ok' can be used instead of '200'
+    %% to signal success.
+    {ok, [], <<"Hello World!">>};
+```
+
+Starting up is as easy as `rebar3 shell`, then go to [http://localhost:8080/hello/world](http://localhost:8080/hello/world) to see it work.
